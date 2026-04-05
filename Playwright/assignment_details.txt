@@ -1,0 +1,22 @@
+Playwright assignment
+
+This script uses Playwright to automate YouTube search and collect video metadata.
+
+Details:
+- Searches YouTube for a query defined in SEARCH_QUERY.
+- Scrolls the page to load more results.
+- Extracts title, link, and thumbnail for up to MAX_VIDEOS videos.
+- Saves the results as a CSV file to youtube_data/videos.csv.
+- Generates a simple HTML gallery at youtube_data/gallery.html.
+- Optionally downloads videos using yt-dlp when DOWNLOAD_VIDEOS is set to True.
+
+Run:
+python3 Playwright/assignment.py
+
+Requirements:
+- playwright
+- yt-dlp (if downloading)
+- Python 3
+
+Playwright setup:
+python3 -m playwright install

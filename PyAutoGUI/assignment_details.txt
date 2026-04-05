@@ -1,0 +1,20 @@
+PyAutoGUI assignment
+
+This script automates desktop actions on macOS using PyAutoGUI.
+
+Details:
+- Opens Google Chrome.
+- Focuses the browser window.
+- Opens a new Chrome window.
+- Navigates to YouTube.
+- Performs a search for a predefined query.
+- Clicks the first video result using screen coordinates.
+
+Run:
+python3 PyAutoGUI/assignment.py
+
+Requirements:
+- pyautogui
+- macOS
+- Chrome browser
+- Python 3

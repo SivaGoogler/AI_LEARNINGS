@@ -1,0 +1,20 @@
+Selenium assignment
+
+This script runs a set of Selenium browser tests against the web app at https://the-internet.herokuapp.com.
+
+Details:
+- Login success test
+- Login failure test
+- Checkbox selection test
+- Dropdown selection test
+- Dynamic loading test
+
+Each test opens Chrome, performs interactions, asserts expected behavior, and then closes the browser.
+
+Run:
+python3 Selenium/assignment.py
+
+Requirements:
+- selenium
+- Chrome browser
+- Python 3
