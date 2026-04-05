@@ -1,20 +1,21 @@
 # AI_LEARNINGS
 
-A small automation learning repository with the following scripts:
+A small automation learning repository organized by framework:
 
-- `test_playwright.py` — YouTube search scraper using Playwright, saves results to `youtube_data/videos.csv`, generates `youtube_data/gallery.html`, and optionally downloads videos via `yt-dlp`.
-- `test_case_selenium.py` — Selenium UI tests against `https://the-internet.herokuapp.com` covering login, checkboxes, dropdown, and dynamic loading.
-- `youtube_search_pyautogui.py` — Simple macOS desktop automation using PyAutoGUI to open Chrome, navigate to YouTube, search, and click a video.
+- `Playwright/assignment.py` — YouTube search scraper using Playwright, saves results to `youtube_data/videos.csv`, generates `youtube_data/gallery.html`, and optionally downloads videos via `yt-dlp`.
+- `Selenium/assignment.py` — Selenium UI tests against `https://the-internet.herokuapp.com` covering login, checkboxes, dropdown, and dynamic loading.
+- `PyAutoGUI/assignment.py` — macOS desktop automation using PyAutoGUI to open Chrome, navigate to YouTube, search, and click a video.
 
 ## Repository structure
 
-- `test_playwright.py`
-- `test_case_selenium.py`
-- `youtube_search_pyautogui.py`
-- `youtube_data/`
-  - `gallery.html`
-  - `videos.csv`
-  - `videos/`
+- `Playwright/`
+  - `assignment.py`
+- `Selenium/`
+  - `assignment.py`
+- `PyAutoGUI/`
+  - `assignment.py`
+- `requirements.txt`
+- `README.md`
 
 ## Setup
 
@@ -22,7 +23,7 @@ A small automation learning repository with the following scripts:
 2. Install required packages:
 
 ```bash
-python3 -m pip install playwright selenium pyautogui yt-dlp
+python3 -m pip install -r requirements.txt
 ```
 
 3. Install Playwright browser dependencies:
@@ -36,7 +37,7 @@ python3 -m playwright install
 ### Playwright YouTube bot
 
 ```bash
-python3 test_playwright.py
+python3 Playwright/assignment.py
 ```
 
 This will:
@@ -46,12 +47,12 @@ This will:
 - save metadata to `youtube_data/videos.csv`
 - generate `youtube_data/gallery.html`
 
-If you want the script to download videos, set `DOWNLOAD_VIDEOS = True` inside `test_playwright.py`.
+If you want the script to download videos, set `DOWNLOAD_VIDEOS = True` inside `Playwright/assignment.py`.
 
 ### Selenium tests
 
 ```bash
-python3 test_case_selenium.py
+python3 Selenium/assignment.py
 ```
 
 This runs all Selenium test functions sequentially.
@@ -59,7 +60,7 @@ This runs all Selenium test functions sequentially.
 ### PyAutoGUI YouTube search
 
 ```bash
-python3 youtube_search_pyautogui.py
+python3 PyAutoGUI/assignment.py
 ```
 
 This script uses desktop automation on macOS and opens Chrome to perform a YouTube search.
@@ -74,6 +75,6 @@ Open `youtube_data/gallery.html` directly in a browser, or use the VS Code Live 
 
 ## Notes
 
-- `test_playwright.py` requires a working Playwright installation.
-- `youtube_search_pyautogui.py` is macOS-specific and uses screen coordinates.
+- `Playwright/assignment.py` requires a working Playwright installation.
+- `PyAutoGUI/assignment.py` is macOS-specific and uses screen coordinates.
 - `yt-dlp` is only used when `DOWNLOAD_VIDEOS` is enabled.
