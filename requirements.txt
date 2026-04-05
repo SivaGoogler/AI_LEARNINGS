@@ -1,0 +1,4 @@
+playwright
+selenium
+pyautogui
+yt-dlp
